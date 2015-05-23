@@ -1,11 +1,9 @@
 package com;
 
-import com.anno.*;
-
 /**
  * Created by namh on 2015-05-23.
  */
-public class Test {
+public class ControllerTest {
     /**
      *
      * 여기에 간단한 설명을 적는다. 이부분은 함수 list 에도 간략 하게 들어가게 된다.
@@ -15,13 +13,13 @@ public class Test {
      *
      * @t.url /test/url
      *
-     * @t.returnFields
+     * @t.returnField
      * <ul>
      * <li>data : <i>ref.data</i> 참조</li>
      * </ul>
      *
      *
-     * @t.returnExample
+     * <p><em>Example</em></p>
      * <pre><code>
      * "data": {
      *     "test" : 10
@@ -32,8 +30,10 @@ public class Test {
      * @param sDate       조회하고 싶은 시작 날짜(date format : yyyyMMddHHmm)
      */
 
-    @RequestMapping(value = "test")
-    public void test(String id, String sDate){
+    @RequestMapping(value = "/request/test")
+    public void test(
+            @RequestParam(value = NewStatsParamKey.USVC_ID, required = true) int usvcId,
+            String id, String sDate){
      
     }
 }
