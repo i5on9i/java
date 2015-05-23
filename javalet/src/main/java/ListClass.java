@@ -21,9 +21,6 @@ public class ListClass {
         ClassDoc[] classes = root.classes();
         for (int i = 0; i < classes.length; ++i) {
             ClassDoc c = classes[i];
-            System.out.println(c);
-
-
             // Methods
             for(MemberDoc m : c.methods()){
 
@@ -39,10 +36,10 @@ public class ListClass {
 
     private static MethodDesc aMethod(MemberDoc m) {
         // tags
-        for(Tag t : m.tags()){
-            System.out.println("name = " + t.name());
-            System.out.println("text = " + t.text());
-        }
+//        for(Tag t : m.tags()){
+//            System.out.println("name = " + t.name());
+//            System.out.println("text = " + t.text());
+//        }
 
         return new MethodDesc(m);
     }
@@ -78,7 +75,6 @@ public class ListClass {
 
             for(Tag t : m.tags()){
                 if(t instanceof ParamTag){
-                    System.out.print("ddd");
                     ParamTag pt = (ParamTag) t;
                     String tag1 = pt.parameterName() + " : " + pt.parameterComment();
 

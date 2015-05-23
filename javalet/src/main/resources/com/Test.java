@@ -6,6 +6,7 @@ import com.anno.*;
  * Created by namh on 2015-05-23.
  */
 public class Test {
+    static final String REQ_TEST = "/req/test";
     /**
      *
      * 여기에 간단한 설명을 적는다. 이부분은 함수 list 에도 간략 하게 들어가게 된다.
@@ -32,7 +33,7 @@ public class Test {
      * @param sDate       조회하고 싶은 시작 날짜(date format : yyyyMMddHHmm)
      */
 
-    @RequestMapping(value = "test")
+    @RequestMapping(value = REQ_TEST)
     public void test(String id, String sDate){
      
     }
