@@ -30,6 +30,7 @@ public class Test {
      * @param sDate       조회하고 싶은 시작 날짜(date format : yyyyMMddHHmm)
      */
 
+    @RequestMapping(value = "test")
     public void test(String id, String sDate){
      
     }

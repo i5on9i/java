@@ -13,7 +13,7 @@ public class DocletTest {
                 "-docletpath",
                 "..\\..\\..\\build\\classes\\main",
                 "-sourcepath",
-                "d:\\mine\\programming\\java\\javalet\\src\\main\\java",
+                "d:\\mine\\programming\\java\\javalet\\src\\main\\resources",
                 "com"
         };
         com.sun.tools.javadoc.Main.execute(options);
