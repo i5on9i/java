@@ -12,7 +12,9 @@ public class DocletTest {
                 ListClass.class.getName(),
                 "-docletpath",
                 "..\\..\\..\\build\\classes\\main",
-                "Test.java"
+                "-sourcepath",
+                "d:\\mine\\programming\\java\\javalet\\src\\main\\java",
+                "com"
         };
         com.sun.tools.javadoc.Main.execute(options);
     }
