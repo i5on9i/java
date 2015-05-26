@@ -6,6 +6,9 @@ public class DocletTest {
     public static void main(String[] args) {
 
 
+        final String SOURCE_PATH = "d:\\mine\\programming\\java\\javalet\\src\\main\\resources";
+        final String FILE_OR_PACKAGE = "d:\\mine\\programming\\java\\javalet\\src\\main\\resources\\com\\Test.java";
+
 //        com.sun.tools.javadoc.Main.execute(new String[]{"-doclet " + ListClass.class.getName()});
         String[] options = new String[]{
                 "-doclet",
@@ -13,8 +16,8 @@ public class DocletTest {
                 "-docletpath",
                 "..\\..\\..\\build\\classes\\main",
                 "-sourcepath",
-                "d:\\mine\\programming\\java\\javalet\\src\\main\\resources",
-                "com"
+                SOURCE_PATH,
+                FILE_OR_PACKAGE
         };
         com.sun.tools.javadoc.Main.execute(options);
     }
